@@ -1,21 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .facebook__main{
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding-top: 200px;
     justify-content: center;
     align-items: center;
 }
 
 .facebook-message{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    margin: 50px;
 }
 
 .facebook-message-title{
     font-size: 50px;
     font-weight: bold;
-    color: #3b5998;
+    color: #6587ca;
     font-family: Klavika, sans-serif;
 }
 
@@ -27,8 +31,10 @@ p{
     border-collapse: collapse;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 30px;
-
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 }
 
 .face__form{
@@ -42,21 +48,24 @@ input{
     width: 300px;
     padding: 20px;
     border-radius: 5px;
-    border-collapse: collapse;
-    /*border: 1px;*/
+    /*border-collapse: collapse;*/
+    margin: 0 0 10px;
+    border: 1px solid gray;
 }
 
 .face__submit{
     color: white;
     text-align: center;
-    background-color: #3b5998;
+    border: none;
+    background-color: #6587ca;
 }
 
 .face__forget{
-    color: #3b5998;
+    color: #6587ca;
     background-color: white;
     text-align: center;
     border: none;
+    border-bottom: 1px solid grey;
 }
 
 .face__new__account{
@@ -64,4 +73,6 @@ input{
     color: white;
     text-align: center;
     width: 200px;
+    border: none;
+    margin-left: 50px;
 }
