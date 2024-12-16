@@ -5,6 +5,8 @@
 }
 
 .facebook__main{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     padding-top: 200px;
@@ -69,10 +71,57 @@ input{
 }
 
 .face__new__account{
-    background-color: greenyellow;
+    background-color: #699b17;
     color: white;
     text-align: center;
     width: 200px;
     border: none;
     margin-left: 50px;
+}
+
+.face__submit:hover,
+.face__new__account:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.face__forget:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #6587ca;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .facebook__main {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .facebook-message-title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .facebook-message {
+        margin: 20px;
+        text-align: center;
+    }
+    .face-form {
+        margin: 20px auto;
+        width: 90%;
+        box-shadow: none;
+        padding: 10px;
+    }
+    input {
+        width: 90%;
+        padding: 15px;
+    }
+    .face__new__account {
+        margin: 20px auto;
+        width: 90%;
+    }
 }
