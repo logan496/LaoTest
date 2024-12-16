@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.facebook__main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-message{
+    margin: 50px;
+}
+
+.facebook-message-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #6587ca;
+    font-family: Klavika, sans-serif;
+}
+
+p{
+    font-family: Segoe UI, sans-serif;
+}
+
+.face-form{
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.face__form{
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    /*border-collapse: collapse;*/
+    margin: 0 0 10px;
+    border: 1px solid gray;
+}
+
+.face__submit{
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: #6587ca;
+}
+
+.face__forget{
+    color: #6587ca;
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.face__new__account{
+    background-color: #699b17;
+    color: white;
+    text-align: center;
+    width: 200px;
+    border: none;
+    margin-left: 50px;
+}
+
+.face__submit:hover,
+.face__new__account:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.face__forget:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #6587ca;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .facebook__main {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .facebook-message-title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .facebook-message {
+        margin: 20px;
+        text-align: center;
+    }
+    .face-form {
+        margin: 20px auto;
+        width: 90%;
+        box-shadow: none;
+        padding: 10px;
+    }
+    input {
+        width: 90%;
+        padding: 15px;
+    }
+    .face__new__account {
+        margin: 20px auto;
+        width: 90%;
+    }
+}
