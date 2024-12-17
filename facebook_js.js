@@ -5,17 +5,23 @@ document.getElementById("faceForm").addEventListener("submit", function(e) {
 
     const nameField = document.getElementById("face__label")
     const passwordField = document.getElementById("face__password")
+    const errorField = document.getElementById("face__error")
+    const errorFieldPassword = document.getElementById("face__error__password")
 
     let hasErros = false;
 
     if (nameField.value.trim() === "") {
-        showErrors(nameField, "Name or password is empty");
+        // showErrors(nameField, "Name or password is empty");
+        nameField.classList.add("error-input");
+        errorField.textContent = "Name  is empty"
         hasErros = true;
     }
 
     const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
     if(!passwordRegex.test(passwordField.value.trim())){
-        showErrors(passwordField, "Password is invalid");
+        // showErrors(passwordField, "Password is invalid");
+        passwordField.classList.add("error-input");
+        errorFieldPassword.textContent = "Password is invalid"
         hasErros = true;
     }
 
@@ -23,17 +29,6 @@ document.getElementById("faceForm").addEventListener("submit", function(e) {
         alert("Data submitted successfully.");
     }
 })
-
-function showErrors(inputField, message) {
-    inputField.classList.add("error-input");
-
-    const errorDiv = document.createElement("div");
-    errorDiv.classList.add("error-message");
-    errorDiv.innerText = message;
-
-    inputField.parentNode.appendChild(errorDiv);
-
-}
 
 function clearErrors() {
     const errorMessages = document.querySelectorAll(".error-message");

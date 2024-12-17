@@ -7,7 +7,7 @@
 .error-input {
     border: 2px solid red;
 }
-.error-message {
+.face__error-message {
     color: red;
     font-size: 14px;
     margin-top: 5px;
