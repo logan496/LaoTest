@@ -31,7 +31,7 @@ document.getElementById("faceForm").addEventListener("submit", function(e) {
 })
 
 function clearErrors() {
-    const errorMessages = document.querySelectorAll(".error-message");
+    const errorMessages = document.querySelectorAll(".face__error-message ");
     errorMessages.forEach((message) => message.remove())
 
     const errorInputs = document.querySelectorAll(".error-input");
