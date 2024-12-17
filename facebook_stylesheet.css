@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.error-input {
+    border: 2px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .facebook__main{
     max-width: 1200px;
     margin: 0 auto;
@@ -97,7 +106,16 @@ button:focus {
     outline: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 920px) {
+    .error-input {
+        border: 2px solid red;
+    }
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
     .facebook__main {
         flex-direction: column;
         padding-top: 50px;
