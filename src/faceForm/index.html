@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="facebook_stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link href="../output.css" rel="stylesheet">
     <title>Facebook_page</title>
 </head>
-<body>
-
-<div class="facebook__main">
-    <div class="facebook-message">
-        <h1 class="facebook-message-title">facebook</h1>
-        <p>Connect with friends and the world <br/>
-            around you on Facebook.
+<body class="bg-gray-100">
+<div class="flex justify-center items-center sm:flex-col lg:flex-row md:flex-row pt-32">
+    <div class="flex flex-col justify-center items-center md:px-16">
+        <h1 class="font-bold text-blue-600 font-sans sm:text-5xl md:text-6xl lg:text-9xl">
+            facebook
+        </h1>
+        <p class="sm:text-mg  text-gray-700 md:text-lg lg:text-2xl">
+            Connect with friends and the world<br/>
+            <span class="sm:pl-7">around you on Facebook.</span>
         </p>
     </div>
-    <div class="face-form">
-        <form class="face__form" method="post">
-            <input type="text" class="face__label" name="face__label"
+    <div class="shadow-lg border-solid border-1 border-black rounded-lg bg-gray-100 sm:p-3 md:p-3 lg:p-10 lg:shadow-xl">
+        <form method="post" class="flex justify-center items-center flex-col">
+            <input type="text" class="input"
                    placeholder="Email or phone number"/>
 
-            <input type="password" class="face__label" name="face__password"
+            <input type="password" class="input"
                    placeholder="Password"/>
 
-            <input type="submit" class="face__submit" name="face__submit" value="Login"/>
+            <input type="submit" class="submit-button-login" value="Login"/>
 
-            <input type="submit" class="face__forget" name="face__forget" value="Forgot password ?"/>
+            <input type="submit" class="submit-button-forgot-password" value="Forgot password ?"/>
 
-            <input type="submit" class="face__new__account" name="face__new__account" value="Create new account"/>
+            <input type="submit" class="submit-button-new-account" value="Create new account"/>
         </form>
-
-        <script src="facebook_js.js"></script>
     </div>
 </div>
 </body>
