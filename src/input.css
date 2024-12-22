@@ -27,4 +27,19 @@
     hover:bg-green-300 hover:-translate-y-0 focus:outline-none focus:ring-green-500 block sm:text-sm focus:ring-2
     md:w-48 md:h-16 md:text-lg text-center
 }
+
+.error-input {
+    @apply
+    border-solid border-red-500 border-2
+    /*border: 2px solid red;*/
+}
+.face__error-message {
+    @apply
+    text-red-500 text-sm mt-5
+    /*color: red;*/
+    /*font-size: 14px;*/
+    /*margin-top: 5px;*/
+
+}
+
 @tailwind utilities
